@@ -14,6 +14,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -110,7 +111,7 @@ fun AdminPinGate(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(24.dp),
             modifier = Modifier
-                .fillMaxWidth(0.45f)
+                .fillMaxWidth(0.5f)
                 .padding(32.dp)
         ) {
             Text(
@@ -173,7 +174,8 @@ fun AdminPinGate(
                             Box(
                                 contentAlignment = Alignment.Center,
                                 modifier = Modifier
-                                    .size(72.dp)
+                                    .weight(1f)
+                                    .aspectRatio(1.2f)
                                     .clip(RoundedCornerShape(14.dp))
                                     .background(
                                         if (key.isBlank()) StheticColors.Cream50
