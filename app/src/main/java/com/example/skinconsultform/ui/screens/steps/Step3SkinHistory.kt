@@ -26,12 +26,14 @@ fun Step3SkinHistory(
         "Acne / Breakouts", "Hyperpigmentation", "Fine Lines / Wrinkles",
         "Dryness", "Oiliness", "Sensitivity",
         "Redness / Rosacea", "Uneven texture", "Enlarged pores",
-        "Scarring", "Warts"
+        "Scarring", "Warts", "Unwanted Hair", "Dark Underarms"
     )
 
     val treatmentOptions = listOf(
         "Chemical Peels", "Microdermabrasion",
-        "Laser Treatments", "Botox / Fillers", "Microneedling"
+        "Laser Treatments", "Botox / Fillers", "Microneedling",
+        "LED Light Therapy", "Radio Frequency", "Pico Laser",
+        "Diode Laser"
     )
 
     var showLastTreatmentPicker by remember { mutableStateOf(false) }
