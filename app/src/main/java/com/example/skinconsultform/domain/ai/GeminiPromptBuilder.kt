@@ -29,7 +29,7 @@ class GeminiPromptBuilder @Inject constructor() {
         Skin concerns: ${concerns.ifBlank { "general skincare" }}.
         Lifestyle notes: ${lifestyle.ifBlank { "none" }}.
         Top recommended treatments: $topTreatments.
-        Address client by first name. Be warm and professional. No bullet points. No headers. Plain paragraph only.
-            """.trimIndent()
+        Address client by first name. Be warm, expert, and reassuring. No bullet points. No headers. Plain paragraph only.
+        """.trimIndent()
     }
 }
